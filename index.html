@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,regular,500" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css">
+	<title>Eldritch Horror</title>
+</head>
+
+<body>
+	<main>
+		<div class="container">
+			<div class="settings">
+				<div class="enemy">
+					<div class="enemy-choice">
+						<div class="slider-prev"><img src="./assets/left.png" alt=""></div>
+						<div class="enemy-slider">
+							<div class="enemies">
+								<img src="assets/Ancients/Azathoth.png" title="Azathoth" alt="azathoth">
+								<img src="assets/Ancients/Cthulthu.png" title="Cthulthu" alt="cthulthu">
+								<img src="assets/Ancients/IogSothoth.png" title="IogSothoth" alt="iogSothoth">
+								<img src="assets/Ancients/ShubNiggurath.png" title="ShubNiggurath" alt="shubNiggurath">
+							</div>
+						</div>
+						<div class="slider-next"><img src="./assets/right.png" alt=""></div>
+					</div>
+				</div>
+				<div class="difficulty-choice">
+					<div class="difficulties">
+						<label><input type="radio" name="difficulty" value="very-easy" class="dif"> очень легкий</label>
+						<label><input type="radio" name="difficulty" value="easy" class="dif"> легкий</label>
+						<label><input type="radio" name="difficulty" value="normal" class="dif"> средний</label>
+						<label><input type="radio" name="difficulty" value="hard" class="dif"> высокий</label>
+						<label><input type="radio" name="difficulty" value="very-hard" class="dif"> очень высокий</label>
+					</div>
+				</div>
+				<div class="start">
+					<button>Замешать колоду</button>
+				</div>
+			</div>
+			<div class="field">
+				<div class="active-card"></div>
+				<div class="deck"></div>
+				<div class="stages">
+					<div class="stage1">
+						<h2 class="st1-title">первая стадия</h2>
+						<div class="stage1-cards">
+							<div class="green gr1"></div>
+							<div class="brown br1"></div>
+							<div class="blue bl1"></div>
+						</div>
+					</div>
+					<div class="stage2">
+						<h2 class="st2-title">вторая стадия</h2>
+						<div class="stage2-cards">
+							<div class="green gr2"></div>
+							<div class="brown br2"></div>
+							<div class="blue bl2"></div>
+						</div>
+					</div>
+					<div class="stage3">
+						<h2 class="st3-title">третья стадия</h2>
+						<div class="stage3-cards">
+							<div class="green gr3"></div>
+							<div class="brown br3"></div>
+							<div class="blue bl3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>
+	<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+body {
+    background-image: url("assets/home.png");
+    background-position: top;
+    background-repeat: no-repeat;
+	 text-transform: uppercase;
+    font-family: 'Roboto, sans-serif';
+    color: white;
+}
+
+.container {
+    position: absolute;
+    top: 43%;
+    width: 95%;
+    margin: -338px 0 0;
+    display: flex;
+	 flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 300;
+	 font-size: 16px;
+}
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.enemy-choice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.enemy-slider {
+    width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.enemies {
+    width: 1400px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.enemies img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+.slider-prev img,
+.slider-next img{
+	width: 60px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.slider-prev,
+.slider-next {
+    font-size: 40px;
+    cursor: pointer;
+    opacity: 0.5;
+	 transition: opacity 0.3s;
+}
+
+.slider-prev:hover,
+.slider-next:hover {
+    opacity: 1;
+}
+
+.difficulties {
+	margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.difficulties label {
+    cursor: pointer;
+}
+
+.difficulties label input {
+    cursor: pointer;
+}
+input.dif{
+	appearance: none;
+	background-color: #fff;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #999;
+	transition: 0.2s all linear;
+	position: relative;
+  	top: 4px;
+}
+input.dif:checked{
+	border: 6px solid black;
+}
+
+.start{
+	margin: 20px 0px;
+}
+.start button{
+	 cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	border-style: none;
+	font-size: 16px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	padding: 5px 10px;
+	background: rgb(255, 255, 255 , 0.2);
+	text-transform: uppercase;
+	color: #fff;
+	margin-left: 20px;
+	transition: all 0.3s;
+}
+
+.start button:hover,
+.start button:active{
+   color: black;
+	border: 2px solid black;
+	background: #fff;
+}
+.field {
+    display: flex;
+    gap: 100px;
+	 align-items: center;
+	 margin-bottom: 10px;
+}
+
+.active-card {
+    width: 205px;
+    height: 300px;
+    border-radius: 15px;
+    background-size: 205px 300px;
+}
+
+.deck {
+    width: 205px;
+    height: 300px;
+    border-radius: 15px;
+    background-image: url("assets/mythicCardBackground.png");
+    background-size: 205px 300px;
+    cursor: pointer;
+    box-shadow: 6px 4px 5px black;
+}
+
+.deck:hover {
+    box-shadow: 8px 5px 6px black;
+}
+
+.green,
+.brown,
+.blue {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green {
+    background-color: rgba(0, 117, 0, 0.5);
+}
+
+.brown {
+    background-color: rgba(101, 67, 33, 0.5);
+}
+
+.blue {
+    background-color: rgba(0, 158, 252, 0.5);
+}
+
+.stage1-cards,
+.stage2-cards,
+.stage3-cards {
+    display: flex;
+    gap: 10px;
+}
